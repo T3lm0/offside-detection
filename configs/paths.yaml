@@ -1,0 +1,21 @@
+# Where the project looks for data, trained models and external code.
+# Relative paths are resolved against the repository root. Each entry can be overridden with the
+# environment variable shown next to it. None of these folders are part of the repository.
+
+# Training outputs; detectors are looked up in <runs_dir>/detect/<run>/weights/best.pt  (OFFSIDE_RUNS_DIR)
+runs_dir: runs
+
+# Pose model; a bare Ultralytics model name is downloaded automatically  (OFFSIDE_POSE_WEIGHTS)
+pose_weights: yolo11m-pose.pt
+
+# Datasets built by scripts/data and scripts/broadcast (SoccerNet in YOLO format, crops...)  (OFFSIDE_DATASET_DIR)
+dataset_dir: data/datasets
+
+# Clone of github.com/NikolasEnt/soccernet-calibration-sportlight with trained HRNet checkpoints  (OFFSIDE_CALIB_REPO)
+calibration_repo: third_party/soccernet-calibration-sportlight
+
+# Broadcast data: matches.json, ESPN events, clips, bench and CVAT sets  (OFFSIDE_BROADCAST_DIR)
+broadcast_dir: data/broadcast
+
+# Analysis results written by the CLIs and the app backend  (OFFSIDE_OUTPUT_DIR)
+output_dir: outputs

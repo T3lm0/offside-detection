@@ -1,0 +1,30 @@
+{
+  "carpeta_videos": "/path/to/your/recordings",
+  "nota": "Copy to <broadcast_dir>/partidos.json. inicio_s: second of the recording where each half starts (broadcast clock at 0:00 / 45:00); negative if the recording started late. 'camara' is written by scripts/broadcast/stadium_camera.py.",
+  "partidos": [
+    {
+      "partido": "TEAM1-TEAM2",
+      "espn_id": 0,
+      "fps": 30,
+      "resolucion": "1280x720",
+      "partes": {
+        "1": {
+          "video": "TEAM1-TEAM2.mkv",
+          "duracion_video_s": 0.0,
+          "inicio_s": 0,
+          "comprobaciones": ["600=10:00"],
+          "origen": "scoreboard",
+          "confianza": "high"
+        },
+        "2": {
+          "video": "TEAM1-TEAM2.mkv",
+          "duracion_video_s": 0.0,
+          "inicio_s": 0,
+          "comprobaciones": [],
+          "origen": "scoreboard",
+          "confianza": "high"
+        }
+      }
+    }
+  ]
+}

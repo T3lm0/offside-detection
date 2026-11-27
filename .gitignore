@@ -1,0 +1,39 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+build/
+dist/
+
+# C++ / Qt build
+app/build/
+CMakeLists.txt.user
+*.o
+
+# Models and training outputs (never published)
+*.pt
+*.pth
+*.onnx
+*.engine
+runs/
+logs/
+outputs/
+events.out.tfevents.*
+
+# Data and media (never published)
+data/*
+!data/README.md
+third_party/
+*.mp4
+*.mkv
+*.avi
+*.zip
+*.jpg
+*.jpeg
+
+# Editors and local tools
+.vscode/
+.idea/
+.env
